@@ -1,0 +1,53 @@
+/* Background image and overlay */
+.contact-form-container {
+    position: relative;
+  /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    color: white;
+  }
+  .container-fulid{  position: relative;
+    background-image: url('https://platinumlist.net/guide/wp-content/uploads/2023/03/8359_img_worlds_of_adventure-big1613913137.jpg-1024x683.webp'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    color: white; 
+  height: 100dvh !important;}
+
+  
+  /* Color overlay */
+  .contact-form-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay color */
+    z-index: 1;
+  }
+  
+  /* Form content styling */
+  .contact-form-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Animation for form fields */
+  .contact-form-content input,
+  .contact-form-content textarea,
+  .contact-form-content button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-form-content input:focus,
+  .contact-form-content textarea:focus,
+  .contact-form-content button:hover {
+    transform: translateY(-5px); /* Lifts the element slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  }
+  
